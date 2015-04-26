@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://getbootstrap.com/2.3.2/examples/create.html -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Sign in</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 50px;
+}
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+ .form-create {
+        max-width: 548px;
+        padding: 19px 29px 29px;
+      }
+      .form-create .form-create-heading,
+      .form-create .checkbox {
+        margin-bottom: 10px;
+      }
+</style>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+<!-- Fav and touch icons -->
+<!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://52.8.75.113/bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://52.8.75.113/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://52.8.75.113/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://52.8.75.113/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://52.8.75.113/bootstrap/ico/favicon.png">-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"> <img alt="Brand" src=""> </a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="index.html">Dashboard</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Project A (PA)</a></li>
+            <li><a href="#">Project B (PB)</a></li>
+            <li><a href="#">Project C (PC)</a></li>
+            <li class="divider"></li>
+            <li><a href="#">View All Projects</a></li>
+          </ul>
+        </li>
+        <li>
+          <button type="button" class="btn btn-default navbar-btn" onclick="window.location='project.html';"><b>Create</b></button>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon glyphicon-question-sign" aria-hidden="true"></span><span class="caret"></span></a >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Online help</a></li>
+            <li><a href="#">Ask a question</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a >
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <input type="text" class="form-control" placeholder="Search...">
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- /nav -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 main">
+      <h2 class="sub-header">New Proposal</h2>
+      <div class="tabbable">
+      <ul class="nav nav-tabs" role="tablist" id="myTab">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Overview</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Technical Specification</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Functional Requirements</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Non-functional Requirements</a></li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+        <form class="form-create">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Project Name</label>
+    <input type="text" class="form-control" id="inputProjectName" placeholder="Enter Project Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Project Type</label>
+    <select class="form-control">
+    	  <option value="">Non-specified</option>
+          <option value="">Web Application</option>
+          <option value="">Mobile Application</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Expected Submitted Date</label>
+    <input type="text" class="form-control" id="inputExpectedDate" placeholder="Enter Submitted Date">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Expected Cost</label>
+    <input type="text" class="form-control" id="inputExpectedCost" placeholder="Enter Expected Cost">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Description</label>
+    <textarea class="form-control" rows="4" placeholder="Enter Description" required></textarea>
+  </div>
+  <ul class="pager">
+    <li><a class="nexttab" href="#">Next</a></li>
+  </ul>
+</form>
+
+</div>
+        <div role="tabpanel" class="tab-pane" id="profile">   <form class="form-create">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Database</label>
+    <input type="text" class="form-control" id="inputProjectName" placeholder="Enter Database">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Programming Language</label>
+    <select class="form-control">
+    	  <option value="">Non-specified</option>
+          <option value="">Java</option>
+          <option value="">PHP</option>
+          <option value="">C++</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Server Information</label>
+    <input type="text" class="form-control" id="inputExpectedDate" placeholder="Enter Server Information">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Operating System</label>
+    <input type="text" class="form-control" id="inputExpectedCost" placeholder="Operating System">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Description</label>
+    <textarea class="form-control" rows="4" placeholder="Enter Description" required></textarea>
+  </div>
+  <ul class="pager">
+   <li><a class="prevtab" href="#">Prev</a></li>
+    <li><a class="nexttab" href="#">Next</a></li>
+  </ul>
+</form></div>
+        <div role="tabpanel" class="tab-pane" id="messages">  <form class="form-create">
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Upload file to specify requirement.</p>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Description</label>
+    <textarea class="form-control" rows="4" placeholder="Enter Description" required></textarea>
+  </div>
+  <ul class="pager">
+   <li><a class="prevtab" href="#">Prev</a></li>
+    <li><a class="nexttab" href="#">Next</a></li>
+  </ul>
+</form> </div>
+        <div role="tabpanel" class="tab-pane" id="settings"> <form class="form-create">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Performance</label>
+    <textarea class="form-control" rows="2" placeholder="Enter Performance Description" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Scalability</label>
+    <textarea class="form-control" rows="2" placeholder="Enter Scalability Description" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Usability</label>
+    <textarea class="form-control" rows="2" placeholder="Enter Usability Description" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Security</label>
+    <textarea class="form-control" rows="2" placeholder="Enter Security Description" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Durability</label>
+    <textarea class="form-control" rows="2" placeholder="Enter Durability Description" required></textarea>
+  </div>
+  <ul class="pager">
+   <li><a class="prevtab" href="#">Prev</a></li>
+    <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Finish</a></li>
+  </ul>
+</form>
+<div class="modal fade bs-example-modal-sm">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Message</h4>
+      </div>
+      <div class="modal-body">
+        <p>Your project has been submmited successfully. Please wait for reviewing.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create a new project</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+      </div>
+      </div>
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  })
+  
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+  
+  	var $tabs = $('.tabbable li');
+
+	$('.prevtab').on('click', function() {
+		$tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+	});
+	
+	$('.nexttab').on('click', function() {
+		$tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+	});
+</script> 
+    </div>
+  </div>
+</div>
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+ 
+<script src="http://52.8.75.113/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
